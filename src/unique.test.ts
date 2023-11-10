@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { unique } from "./unqiue.js";
+import { unique } from "./unique.js";
 
 for (const [xs, ys] of [
   [[1, 1], [1]],
