@@ -8,4 +8,5 @@ export * from "./last.js";
 export * from "./map-values.js";
 export * from "./once.js";
 export * from "./range.js";
+export * from "./size.js";
 export * from "./unique.js";
