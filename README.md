@@ -5,7 +5,12 @@
 [![npm](https://img.shields.io/npm/v/@raviqqe/loscore?style=flat-square)](https://www.npmjs.com/package/@raviqqe/loscore)
 [![License](https://img.shields.io/github/license/raviqqe/loscore.svg?style=flat-square)](LICENSE)
 
-Yet another utility library.
+Yet another utility library in TypeScript.
+
+## References
+
+- [lodash](https://lodash.com/)
+- [underscore](https://underscorejs.org/)
 
 ## License
 
