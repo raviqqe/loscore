@@ -1,5 +1,6 @@
 export * from "./capitalize.js";
 export * from "./compact.js";
+export * from "./flow.js";
 export * from "./identity.js";
 export * from "./is-boolean.js";
 export * from "./is-number.js";
