@@ -2,7 +2,7 @@ export const range = function* (
   start: number,
   end?: number,
   step?: number,
-): Iterator<number> {
+): Iterable<number> {
   if (end === undefined) {
     end = start;
     start = 0;
