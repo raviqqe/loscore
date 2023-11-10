@@ -9,4 +9,4 @@ Yet another utility library.
 
 ## License
 
-[The Unlicense](UNLICENSE)
+[MIT](LICENSE)
