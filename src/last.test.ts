@@ -1,5 +1,5 @@
-import { last } from "./last.js";
 import { it, expect } from "vitest";
+import { last } from "./last.js";
 
 for (const [xs, y] of [
   [[], undefined],
