@@ -1,4 +1,4 @@
-export const mapValues = <K extends string, V, W>(
+export const mapValues = <K extends number | string | symbol, V, W>(
   x: { [k in K]: V },
   f: (x: V) => W,
 ): { [k: string]: W } =>
