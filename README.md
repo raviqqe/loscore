@@ -11,6 +11,7 @@ Yet another utility library for TypeScript.
 
 - Avoid unsound features of TypeScript as much as possible.
 - Avoid overloading and rather consider separate monomorphic functions.
+- Do not sacrifice performance for correct typing.
 
 ## References
 
