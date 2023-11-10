@@ -1,3 +1,4 @@
+export * from "./capitalize.js";
 export * from "./compact.js";
 export * from "./identity.js";
 export * from "./is-boolean.js";
@@ -10,3 +11,4 @@ export * from "./once.js";
 export * from "./range.js";
 export * from "./size.js";
 export * from "./unique.js";
+export * from "./zip.js";
