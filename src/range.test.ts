@@ -25,3 +25,7 @@ it("iterates over a range with a step", () => {
     x += 2;
   }
 });
+
+it("does not include an end", () => {
+  expect([...range(3)]).toEqual([0, 1, 2]);
+});
