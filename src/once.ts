@@ -1,4 +1,4 @@
-export const once = <T extends (...args: any[]) => any>(f: T) => {
+export const once = <T extends (...args: unknown[]) => never>(f: T) => {
   let called = false;
   let value: ReturnType<T>;
 
