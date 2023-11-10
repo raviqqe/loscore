@@ -2,12 +2,12 @@ import { it, expect } from "vitest";
 import { mapValues } from "./map-values.js";
 
 it("maps values in an object", () => {
-  expect(mapValues({ foo: 2, bar: 3 }, (x) => x * x)).toEqual({
-    foo: 4,
+  expect(mapValues({ bar: 3, foo: 2 }, (x) => x * x)).toEqual({
     bar: 9,
+    foo: 4,
   });
 });
 
 it("maps values in an object into a different type", () => {
-  expect(mapValues({ foo: 2, bar: 3 }, String)).toEqual({ foo: "2", bar: "3" });
+  expect(mapValues({ bar: 3, foo: 2 }, String)).toEqual({ bar: "3", foo: "2" });
 });
