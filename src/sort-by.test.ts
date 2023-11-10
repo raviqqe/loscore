@@ -13,8 +13,8 @@ it("reverses an array of numbers", () => {
   expect(sortBy([1, 2, 3], (x) => -x)).toEqual([3, 2, 1]);
 });
 
-it("calclates a key only once", () => {
-  let called = new Set();
+it("calculates a key only once", () => {
+  const called = new Set();
 
   expect(
     sortBy([1, 2, 3, 1, 2, 3], (x) => {
