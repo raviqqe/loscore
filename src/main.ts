@@ -1,4 +1,4 @@
-export * from "./compact.ts";
+export * from "./compact.js";
 export * from "./identity.js";
 export * from "./last.js";
 export * from "./once.js";

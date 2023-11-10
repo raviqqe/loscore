@@ -8,6 +8,8 @@ for (const [xs, y] of [
   [[false], []],
 ] satisfies [unknown[], unknown[]][]) {
   it(`finds the last element in an array ${JSON.stringify(xs)}`, () => {
-    expect(compact(xs)).toBe(y);
+    const zs: unknown[] = xs;
+
+    expect(compact(zs)).toBe(y);
   });
 }
