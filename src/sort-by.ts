@@ -1,11 +1,13 @@
 export const sortBy = <T>(xs: T[], f: (x: T) => never): T[] => {
-  const keys = new Set();
+  const keys = new Map();
   const g = (x: T) => {
-    if (keys.has(x)) return x;
+    if (keys.has(x)) {
+      return keys.get(x);
+    }
 
-    const key = f(x);
-    keys.add(key);
-    return key;
+    const value = f(x);
+    keys.set(x, value);
+    return value;
   };
 
   return xs.sort((x, y) => (g(x) < g(y) ? -1 : 1));
