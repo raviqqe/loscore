@@ -8,3 +8,7 @@ it("sorts objects by a property", () => {
     { foo: 3 },
   ]);
 });
+
+it("reverses an array of numbers", () => {
+  expect(sortBy([1, 2, 3], (x) => -x)).toEqual([3, 2, 1]);
+});
