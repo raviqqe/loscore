@@ -1,4 +1,6 @@
-export const sortBy = <T>(xs: T[], f: (x: T) => never): T[] => {
+export type SortKey = string | number | boolean | null | undefined | SortKey[];
+
+export const sortBy = <T>(xs: T[], f: (x: T) => SortKey): T[] => {
   const keys = new Map();
   const g = (x: T) => {
     if (keys.has(x)) {
