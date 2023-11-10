@@ -12,3 +12,14 @@ it("sorts objects by a property", () => {
 it("reverses an array of numbers", () => {
   expect(sortBy([1, 2, 3], (x) => -x)).toEqual([3, 2, 1]);
 });
+
+it("calclates a key only once", () => {
+  let called = new Set();
+
+  expect(
+    sortBy([1, 2, 3, 1, 2, 3], (x) => {
+      expect(called.has(x)).toBe(false);
+      return x;
+    }),
+  ).toEqual([1, 1, 2, 2, 3, 3]);
+});
