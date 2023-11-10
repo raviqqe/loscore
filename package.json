@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Yet another utility library",
   "repository": "https://github.com/raviqqe/loscore",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "publishConfig": {
     "provenance": true
   },
