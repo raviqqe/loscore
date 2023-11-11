@@ -7,19 +7,25 @@
 
 Yet another utility library for [the Web APIs][web-api] in TypeScript.
 
+## Background
+
+[Lodash]()
+
 ## Principles
 
 - Avoid unsound features of TypeScript as much as possible.
 - Avoid overloading and rather consider separate monomorphic functions.
 - Do not sacrifice performance for correct typing.
+- Depend only on [the Web APIs][web-api].
 
 ## References
 
-- [lodash](https://lodash.com/)
+- [lodash][lodash]
 - [underscore](https://underscorejs.org/)
 
 ## License
 
 [MIT](LICENSE)
 
+[lodash]: https://lodash.com/
 [web-api]: https://developer.mozilla.org/en-US/docs/Web/API
