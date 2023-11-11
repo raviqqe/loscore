@@ -13,6 +13,6 @@ for (const [xs, ys] of [
   ],
 ] satisfies [number[], number[]][]) {
   it(`makes elements of an array ${JSON.stringify(xs)} unique`, () => {
-    expect(unique(xs)).toEqual(ys);
+    expect([...unique(xs)]).toEqual(ys);
   });
 }

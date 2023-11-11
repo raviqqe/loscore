@@ -1,13 +1,10 @@
-export const unique = <T>(xs: T[]): T[] => {
-  const ys = [];
+export const unique = function* <T>(xs: T[]): Iterable<T> {
   const set = new Set();
 
   for (const x of xs) {
     if (!set.has(x)) {
-      ys.push(x);
+      yield x;
       set.add(x);
     }
   }
-
-  return ys;
 };
