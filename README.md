@@ -14,7 +14,8 @@ Yet another utility library for [the Web APIs][web-api] in TypeScript.
 ## Principles
 
 - Avoid unsound features of TypeScript as much as possible.
-- Avoid overloading and rather consider separate monomorphic functions.
+- Avoid overloaded functions.
+  - Rather consider separate monomorphic functions.
 - Do not sacrifice performance for correct typing.
 - Depend only on [the Web APIs][web-api].
 - Do not replicate any logic implemented in [the Web APIs][web-api] already.
