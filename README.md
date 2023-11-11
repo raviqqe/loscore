@@ -10,7 +10,7 @@
 
 Yet another utility library for [the Web APIs][web-api] in TypeScript.
 
-Before using this library, also consider using [Lodash][lodash] v5.
+Before using this library, also consider using [Lodash][lodash] v5 (not officially published yet as of 2023/11/11.)
 
 ## Background
 
