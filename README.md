@@ -17,6 +17,7 @@ Yet another utility library for [the Web APIs][web-api] in TypeScript.
 - Avoid overloading and rather consider separate monomorphic functions.
 - Do not sacrifice performance for correct typing.
 - Depend only on [the Web APIs][web-api].
+- Do not replicate any logic implemented in [the Web APIs][web-api] already.
 
 ## References
 
