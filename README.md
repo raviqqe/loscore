@@ -5,6 +5,8 @@
 [![npm](https://img.shields.io/npm/v/@raviqqe/loscore?style=flat-square)](https://www.npmjs.com/package/@raviqqe/loscore)
 [![License](https://img.shields.io/github/license/raviqqe/loscore.svg?style=flat-square)](LICENSE)
 
+> This library is still experimental and under active development.
+
 Yet another utility library for [the Web APIs][web-api] in TypeScript.
 
 Before using this library, also consider using [Lodash][lodash] v5.
