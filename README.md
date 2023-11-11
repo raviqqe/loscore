@@ -7,9 +7,11 @@
 
 Yet another utility library for [the Web APIs][web-api] in TypeScript.
 
+Before using this library, consider also using [Lodash][lodash] v5.
+
 ## Background
 
-[Lodash]()
+[Lodash][lodash] is great. However, it was originally written in JavaScript and the project started a while ago. Loscore is an experimental library to throw away all existing legacy of it and build utilities on top of modern (de facto) standards of [the Web APIs]() and TypeScript.
 
 ## Principles
 
