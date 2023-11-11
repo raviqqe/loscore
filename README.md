@@ -24,6 +24,7 @@ Before using this library, also consider using [Lodash][lodash] v5 (not official
 - Do not sacrifice performance for correct typing.
 - Depend only on [the Web APIs][web-api].
 - Do not replicate logic implemented in [the Web APIs][web-api] already.
+- Provide tree-shakeable ES modules.
 
 ## References
 
