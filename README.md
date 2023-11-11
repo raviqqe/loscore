@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/@raviqqe/loscore?style=flat-square)](https://www.npmjs.com/package/@raviqqe/loscore)
 [![License](https://img.shields.io/github/license/raviqqe/loscore.svg?style=flat-square)](LICENSE)
 
-Yet another utility library for TypeScript.
+Yet another utility library for [the Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) in TypeScript.
 
 ## Principles
 
