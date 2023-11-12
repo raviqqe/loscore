@@ -1,3 +1,5 @@
+import { filter } from "./filter.js";
+
 // TODO Replace with flatten.
 export const flatSlice = <T>(
   iterable: AsyncIterable<T[]>,
