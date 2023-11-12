@@ -8,8 +8,16 @@
     "provenance": true
   },
   "type": "module",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    },
+    "./async": {
+      "types": "./dist/async.d.ts",
+      "default": "./dist/async.js"
+    }
+  },
   "scripts": {
     "build": "npm run build:tsc && npm run build:esbuild",
     "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist 'src/*.ts'",

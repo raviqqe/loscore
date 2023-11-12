@@ -1,15 +1,4 @@
 import { describe, expect, it } from "vitest";
-import {
-  sleep,
-  defer,
-  toArray,
-  toFlatArray,
-  slice,
-  flatSlice,
-  filter,
-  map,
-  isAsyncIterable,
-} from "./promise.js";
 
 it("sleeps", async () => {
   await sleep(0);
