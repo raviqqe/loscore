@@ -1,5 +1,7 @@
 import { map } from "./map.js";
 
+// TODO Split into multiple files.
+
 export const toStream = <T>(iterable: AsyncIterable<T>): ReadableStream<T> =>
   new ReadableStream({
     start: async (controller) => {
