@@ -1,5 +1,5 @@
 {
-  "entry": ["src/**/*.test.ts"],
+  "entry": ["src/main.ts", "src/**/*.test.ts"],
   "plugins": ["vitest"],
   "project": ["src/**/*.ts"]
 }
