@@ -1,0 +1,5 @@
+{
+  "entry": ["src/**/*.test.ts"],
+  "plugins": ["vitest"],
+  "project": ["src/**/*.ts"]
+}
