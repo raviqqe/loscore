@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
-import { toArray } from "./to-array.js";
 import { flatSlice } from "./flat-slice.js";
+import { toArray } from "./to-array.js";
 
 it("slices an empty iterable", async () => {
   expect(await toArray(flatSlice((async function* () {})(), 0, 0))).toEqual([]);

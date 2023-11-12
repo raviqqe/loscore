@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
-import { toArray } from "./to-array.js";
 import { filter } from "./filter.js";
+import { toArray } from "./to-array.js";
 
 it("slices an empty iterable", async () => {
   expect(await toArray(filter((async function* () {})(), () => true))).toEqual(

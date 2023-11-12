@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
-import { toArray } from "./to-array.js";
 import { map } from "./map.js";
+import { toArray } from "./to-array.js";
 
 it("maps a function to nothing", async () => {
   expect(await toArray(map((async function* () {})(), () => true))).toEqual([]);

@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { toArray } from "./to-array.js";
 import {
   toIterable,
   toStream,
   toByteStream,
   toStringStream,
 } from "./stream.js";
+import { toArray } from "./to-array.js";
 
 describe(toIterable.name, () => {
   it("converts a stream into iterable", async () => {
