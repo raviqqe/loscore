@@ -23,7 +23,7 @@
     "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist 'src/*.ts'",
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
-    "lint": "eslint 'src/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts' && knip --exports",
     "test": "vitest --coverage"
   },
   "devDependencies": {
