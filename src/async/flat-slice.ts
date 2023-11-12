@@ -1,3 +1,4 @@
+// TODO Replace with flatten.
 export const flatSlice = <T>(
   iterable: AsyncIterable<T[]>,
   start: number,

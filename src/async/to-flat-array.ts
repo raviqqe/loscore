@@ -1,3 +1,4 @@
+// TODO Replace with flatten.
 export const toFlatArray = async <T>(
   iterable: AsyncIterable<T[]>,
 ): Promise<T[]> => {
