@@ -1,21 +1,3 @@
-export const sleep = (ms: number): Promise<void> =>
-  new Promise((resolve) => setTimeout(resolve, ms));
-
-export const defer = <T, F extends (...args: never[]) => Promise<T>>(
-  callback: F,
-): ((...args: Parameters<F>) => Promise<T>) => {
-  const cache: Record<string, Promise<T>> = {};
-
-  return async (...args: Parameters<F>): Promise<T> => {
-    const key = JSON.stringify(args);
-    const lastPromise = cache[key];
-    const promise = callback(...args);
-    cache[key] = promise;
-
-    return lastPromise ?? promise;
-  };
-};
-
 export const toArray = async <T>(iterable: AsyncIterable<T>): Promise<T[]> => {
   const values: T[] = [];
 
@@ -88,7 +70,6 @@ export const map = async function* <T, S>(
 };
 
 export const filter: {
-  // TODO How can we not tell lie to the type system...?
   <T, S extends T>(
     iterable: AsyncIterable<T>,
     check: (x: T) => x is S,
