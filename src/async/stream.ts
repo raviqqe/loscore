@@ -1,4 +1,4 @@
-import * as promise from "./promise.js";
+import { map } from "./map.js";
 
 export const toStream = <T>(iterable: AsyncIterable<T>): ReadableStream<T> =>
   new ReadableStream({
@@ -32,7 +32,7 @@ export const toStringStream = (
 ): ReadableStream<string> => {
   const decoder = new TextDecoder();
 
-  return map(stream, (text) => decoder.decode(text));
+  return mapStream(stream, (text) => decoder.decode(text));
 };
 
 export const toByteStream = (
@@ -40,10 +40,10 @@ export const toByteStream = (
 ): ReadableStream<Uint8Array> => {
   const encoder = new TextEncoder();
 
-  return map(stream, (text) => encoder.encode(text));
+  return mapStream(stream, (text) => encoder.encode(text));
 };
 
-export const map = <T, S>(
+export const mapStream = <T, S>(
   stream: ReadableStream<T>,
   callback: (value: T) => S,
-): ReadableStream<S> => toStream(promise.map(toIterable(stream), callback));
+): ReadableStream<S> => toStream(map(toIterable(stream), callback));
