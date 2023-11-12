@@ -1,6 +1,5 @@
 export * from "./capitalize.js";
 export * from "./compact.js";
-export * from "./defer.js";
 export * from "./flow.js";
 export * from "./identity.js";
 export * from "./interleave.js";
@@ -18,7 +17,6 @@ export * from "./once.js";
 export * from "./range.js";
 export * from "./shuffle.js";
 export * from "./size.js";
-export * from "./sleep.js";
 export * from "./sort-by.js";
 export * from "./unique.js";
 export * from "./zip.js";
