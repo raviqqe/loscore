@@ -8,14 +8,22 @@
     "provenance": true
   },
   "type": "module",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    },
+    "./async": {
+      "types": "./dist/async.d.ts",
+      "default": "./dist/async.js"
+    }
+  },
   "scripts": {
     "build": "npm run build:tsc && npm run build:esbuild",
     "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist 'src/*.ts'",
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
-    "lint": "eslint 'src/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts' && knip --exports",
     "test": "vitest --coverage"
   },
   "devDependencies": {
@@ -24,6 +32,7 @@
     "@vitest/coverage-v8": "^0.34.1",
     "esbuild": "^0.19.5",
     "eslint": "^8.34.0",
+    "knip": "^2.41.0",
     "typescript": "^5.0.2",
     "vitest": "^0.34.1"
   }
