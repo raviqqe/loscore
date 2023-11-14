@@ -1,7 +1,7 @@
 export const range = function* (
   start: number,
   end?: number,
-  step: number = 1,
+  step = 1,
 ): Iterable<number> {
   if (end === undefined) {
     end = start;
