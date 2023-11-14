@@ -1,8 +1,8 @@
 import { expect, it } from "vitest";
 import { toArray } from "./to-array.js";
+import { toByteStream } from "./to-byte-stream.js";
 import { toIterable } from "./to-iterable.js";
 import { toStringStream } from "./to-string-stream.js";
-import { toByteStream } from "./to-byte-stream.js";
 
 it("converts byte stream to string stream", async () => {
   expect(
