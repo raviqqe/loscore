@@ -1,5 +1,5 @@
 {
-  "entry": ["src/main.ts", "src/async.ts", "src/**/*.test.ts"],
+  "entry": ["src/main.ts", "src/async.ts"],
   "ignoreDependencies": ["@vitest/coverage-v8"],
   "plugins": ["vitest"],
   "project": ["src/**/*.ts"]
