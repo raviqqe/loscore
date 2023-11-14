@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "npm run build:tsc && npm run build:esbuild",
-    "build:esbuild": "esbuild --bundle --minify --format=esm --packages:external --sourcemap --outdir=dist src/main.ts src/async.ts",
+    "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist 'src/*.ts'",
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts' && knip --exports",
