@@ -24,7 +24,7 @@
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts' && npm run lint:knip",
-    "lint:knip": "knip --exclude unlisted",
+    "lint:knip": "knip",
     "test": "vitest --coverage"
   },
   "devDependencies": {
