@@ -14,8 +14,8 @@ describe(interleave.name, () => {
   });
 
   it("interleaves a separator with a function", async () => {
-    expect(interleaveToArray([1, 2, 3], (index) => index + 42)).toEqual([
-      1, 42, 2, 43, 3,
-    ]);
+    expect(interleaveToArray([1, 2, 3], (index: number) => index + 42)).toEqual(
+      [1, 42, 2, 43, 3],
+    );
   });
 });
