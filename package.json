@@ -20,10 +20,11 @@
   },
   "scripts": {
     "build": "npm run build:tsc && npm run build:esbuild",
-    "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist 'src/*.ts'",
+    "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist src/*.ts",
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
-    "lint": "eslint 'src/**/*.ts' && knip --exports",
+    "lint": "eslint 'src/**/*.ts' && npm run lint:knip",
+    "lint:knip": "knip",
     "test": "vitest --coverage"
   },
   "devDependencies": {
