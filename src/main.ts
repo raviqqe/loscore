@@ -1,6 +1,7 @@
 export * from "./capitalize.js";
 export * from "./compact.js";
 export * from "./filter.js";
+export * from "./flatten.js";
 export * from "./flow.js";
 export * from "./identity.js";
 export * from "./interleave.js";
