@@ -2,9 +2,9 @@ import { expect, it } from "vitest";
 import { flatten } from "./flatten.js";
 import { toArray } from "./to-array.js";
 
-it("flattens values", () => {
+it("flattens values", async () => {
   expect(
-    toArray(
+    await toArray(
       flatten([
         [1, 2],
         [3, 4],
