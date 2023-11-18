@@ -21,7 +21,7 @@
   "scripts": {
     "build": "npm run build:tsc && npm run build:esbuild",
     "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist $(git ls-files src)",
-    "build:doc": "typedoc --json api.json src --excludeExternals",
+    "build:doc": "typedoc --excludeExternals --json api.json src/main.ts src/async.ts",
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts' && npm run lint:knip",
