@@ -1,4 +1,4 @@
-type GeneralIterable<T> = AsyncIterable<T> | Iterable<T>;
+import { type GeneralIterable } from "./general-iterable.js";
 
 export const flatten = async function* <T>(
   xs: GeneralIterable<GeneralIterable<T>>,

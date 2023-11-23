@@ -20,5 +20,6 @@ export * from "./range.js";
 export * from "./shuffle.js";
 export * from "./size.js";
 export * from "./sort-by.js";
+export * from "./sort-key.js";
 export * from "./unique.js";
 export * from "./zip.js";
