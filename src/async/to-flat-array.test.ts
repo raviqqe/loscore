@@ -1,5 +1,11 @@
 import { expect, it } from "vitest";
-import { toFlatArray } from "./to-flat-array.js";
+import { toArray } from "./to-array.js";
+import { flatten } from "./flatten.js";
+import { GeneralIterable } from "./general-iterable.js";
+
+const toFlatArray = <T>(
+  iterable: GeneralIterable<GeneralIterable<T>>,
+): Promise<T[]> => toArray(flatten(iterable));
 
 it("converts an empty iterable", async () => {
   expect(await toFlatArray((async function* () {})())).toEqual([]);

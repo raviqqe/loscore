@@ -1,4 +1,4 @@
-export type SortKey = string | number | boolean | Date | SortKey[];
+import { SortKey } from "./sort-key.js";
 
 export const sortBy = <T>(xs: T[], f: (x: T) => SortKey): T[] => {
   const keys = new Map<T, ReturnType<typeof f>>();
