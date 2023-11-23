@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { flatten } from "./flatten.js";
+import { type GeneralIterable } from "./general-iterable.js";
 import { toArray } from "./to-array.js";
-import { GeneralIterable } from "./general-iterable.js";
 
 it("flattens values", async () => {
   expect(
