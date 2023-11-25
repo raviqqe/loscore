@@ -2,17 +2,17 @@ export const zip = function* <T, S>(
   xs: Iterable<T>,
   ys: Iterable<S>,
 ): Iterable<[T, S]> {
-  const xsIterator = xs[Symbol.iterator]();
-  const ysIterator = ys[Symbol.iterator]();
+  const xIterator = xs[Symbol.iterator]();
+  const yIterator = ys[Symbol.iterator]();
 
   while (true) {
-    const xResult = xsIterator.next();
-    const yResult = ysIterator.next();
+    const x = xIterator.next();
+    const y = yIterator.next();
 
-    if (xResult.done || yResult.done) {
+    if (x.done || y.done) {
       break;
     }
 
-    yield [xResult.value, yResult.value];
+    yield [x.value, y.value];
   }
 };
