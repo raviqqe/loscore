@@ -1,6 +1,7 @@
 export * from "./capitalize.js";
 export * from "./compact.js";
 export * from "./deep-equal.js";
+export * from "./every.js";
 export * from "./filter.js";
 export * from "./flatten.js";
 export * from "./flow.js";
@@ -20,6 +21,7 @@ export * from "./once.js";
 export * from "./range.js";
 export * from "./shuffle.js";
 export * from "./size.js";
+export * from "./some.js";
 export * from "./sort-by.js";
 export * from "./sort-key.js";
 export * from "./unique.js";
