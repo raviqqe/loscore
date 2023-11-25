@@ -5,9 +5,7 @@ export const groupBy = <T, K extends string | number | symbol>(
   let ys = {} as Record<K, T[]>;
 
   for (const x of xs) {
-    const key = f(x);
-
-    (ys[key] ??= []).push(x);
+    (ys[f(x)] ??= []).push(x);
   }
 
   return ys;
