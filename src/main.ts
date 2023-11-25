@@ -5,6 +5,7 @@ export * from "./every.js";
 export * from "./filter.js";
 export * from "./flatten.js";
 export * from "./flow.js";
+export * from "./group-by.js";
 export * from "./identity.js";
 export * from "./interleave.js";
 export * from "./is-alphabetic.js";
