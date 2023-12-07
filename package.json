@@ -24,12 +24,12 @@
     "build:doc": "typedoc --out doc src/main.ts src/async.ts",
     "build:tsc": "tsc --emitDeclarationOnly",
     "prepare": "npm run build",
-    "lint": "eslint 'src/**/*.ts' && npm run lint:knip",
+    "lint": "eslint src && npm run lint:knip",
     "lint:knip": "knip",
     "test": "vitest --coverage"
   },
   "devDependencies": {
-    "@raviqqe/eslint-config": "^1.0.22",
+    "@raviqqe/eslint-config": "^2.0.2",
     "@raviqqe/tsconfig": "^1.0.1",
     "@types/node": "^20.10.3",
     "@vitest/coverage-v8": "^1.0.1",
