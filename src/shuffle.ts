@@ -1,14 +1,15 @@
 import { range } from "./range.js";
 
-export const shuffle = <T>(xs: T[]): T[] => {
-  xs = [...xs];
+export const shuffle = <T>(array: T[]): T[] => {
+  array = [...array];
 
-  for (const index of range(xs.length)) {
-    const targetIndex = index + Math.floor(Math.random() * (xs.length - index));
-    const x = xs[targetIndex]!;
-    xs[targetIndex] = xs[index]!;
-    xs[index] = x;
+  for (const index of range(array.length)) {
+    const targetIndex =
+      index + Math.floor(Math.random() * (array.length - index));
+    const x = array[targetIndex]!;
+    array[targetIndex] = array[index]!;
+    array[index] = x;
   }
 
-  return xs;
+  return array;
 };
