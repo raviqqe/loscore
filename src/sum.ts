@@ -1,9 +1,9 @@
-export const sum = (xs: Iterable<number>): number => {
-  let y = 0;
+export const sum = (iterable: Iterable<number>): number => {
+  let sum = 0;
 
-  for (const x of xs) {
-    y += x;
+  for (const value of iterable) {
+    sum += value;
   }
 
-  return y;
+  return sum;
 };
