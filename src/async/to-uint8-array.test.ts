@@ -17,5 +17,5 @@ it("accumulates arrays", async () => {
         })(),
       ),
     ),
-  ).toEqual(new Uint8Array());
+  ).toEqual(new Uint8Array([1, 2, 3, 4, 5, 6]));
 });
