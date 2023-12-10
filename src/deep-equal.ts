@@ -2,24 +2,25 @@ import { every } from "./every.js";
 import { map } from "./map.js";
 import { zip } from "./zip.js";
 
-export const deepEqual = (x: unknown, y: unknown): boolean =>
-  x === y ||
-  (Array.isArray(x) && Array.isArray(y) && equalArrays(x, y)) ||
-  (!!x && !!y && equalObjects(x, y));
+export const deepEqual = (one: unknown, other: unknown): boolean =>
+  one === other ||
+  (Array.isArray(one) && Array.isArray(other) && equalArrays(one, other)) ||
+  (!!one && !!other && equalObjects(one, other));
 
-const equalArrays = (x: unknown[], y: unknown[]): boolean =>
-  x.length === y.length && every(map(zip(x, y), ([x, y]) => deepEqual(x, y)));
+const equalArrays = (one: unknown[], other: unknown[]): boolean =>
+  one.length === other.length &&
+  every(map(zip(one, other), ([one, other]) => deepEqual(one, other)));
 
-const equalObjects = (x: object, y: object): boolean => {
-  const keys = Object.keys(x);
+const equalObjects = (one: object, other: object): boolean => {
+  const keys = Object.keys(one);
 
   return (
-    equalArrays(keys, Object.keys(y)) &&
+    equalArrays(keys, Object.keys(other)) &&
     every(
       map(keys, (key) =>
         deepEqual(
-          (x as Record<string, unknown>)[key],
-          (y as Record<string, unknown>)[key],
+          (one as Record<string, unknown>)[key],
+          (other as Record<string, unknown>)[key],
         ),
       ),
     )

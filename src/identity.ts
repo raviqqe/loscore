@@ -1,1 +1,1 @@
-export const identity = <T>(x: T): T => x;
+export const identity = <T>(value: T): T => value;

@@ -1,8 +1,8 @@
 export const map = function* <T, S>(
-  xs: Iterable<T>,
-  f: (x: T) => S,
+  iterable: Iterable<T>,
+  convert: (value: T) => S,
 ): Iterable<S> {
-  for (const x of xs) {
-    yield f(x);
+  for (const value of iterable) {
+    yield convert(value);
   }
 };

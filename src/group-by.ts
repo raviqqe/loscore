@@ -1,12 +1,12 @@
 export const groupBy = <T, K extends string | number | symbol>(
-  xs: Iterable<T>,
-  f: (x: T) => K,
+  iterable: Iterable<T>,
+  getKey: (value: T) => K,
 ): Record<K, T[]> => {
   const ys = {} as Record<K, T[]>;
 
-  for (const x of xs) {
+  for (const x of iterable) {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-    (ys[f(x)] ??= []).push(x);
+    (ys[getKey(x)] ??= []).push(x);
   }
 
   return ys;

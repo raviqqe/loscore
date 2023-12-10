@@ -1,19 +1,19 @@
 export const zip = function* <T, S>(
-  xs: Iterable<T>,
-  ys: Iterable<S>,
+  iterable1: Iterable<T>,
+  iterable2: Iterable<S>,
 ): Iterable<[T, S]> {
-  const xIterator = xs[Symbol.iterator]();
-  const yIterator = ys[Symbol.iterator]();
+  const iterator1 = iterable1[Symbol.iterator]();
+  const iterator2 = iterable2[Symbol.iterator]();
 
   while (true) {
-    const x = xIterator.next();
-    const y = yIterator.next();
+    const result1 = iterator1.next();
+    const result2 = iterator2.next();
 
     // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-    if (x.done || y.done) {
+    if (result1.done || result2.done) {
       break;
     }
 
-    yield [x.value, y.value];
+    yield [result1.value, result2.value];
   }
 };

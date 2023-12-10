@@ -1,14 +1,14 @@
 import { type SortKey } from "./sort-key.js";
 
-export const sortBy = <T>(xs: T[], f: (x: T) => SortKey): T[] => {
-  const keys = new Map<T, ReturnType<typeof f>>();
-  const g = (x: T) => {
-    if (!keys.has(x)) {
-      keys.set(x, f(x));
+export const sortBy = <T>(array: T[], test: (value: T) => SortKey): T[] => {
+  const keys = new Map<T, ReturnType<typeof test>>();
+  const convertToKey = (value: T) => {
+    if (!keys.has(value)) {
+      keys.set(value, test(value));
     }
 
-    return keys.get(x)!;
+    return keys.get(value)!;
   };
 
-  return xs.sort((x, y) => (g(x) < g(y) ? -1 : 1));
+  return array.sort((x, y) => (convertToKey(x) < convertToKey(y) ? -1 : 1));
 };

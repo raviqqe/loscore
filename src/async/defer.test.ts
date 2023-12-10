@@ -13,9 +13,9 @@ it("defers a value", async () => {
 });
 
 it("defers values with different arguments", async () => {
-  let y = 0;
+  let count = 0;
 
-  const callback = defer(async (x: number) => x + y++);
+  const callback = defer(async (value: number) => value + count++);
 
   expect(await callback(1)).toBe(1);
   expect(await callback(2)).toBe(3);

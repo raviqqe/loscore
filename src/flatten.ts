@@ -1,5 +1,7 @@
-export const flatten = function* <T>(xs: Iterable<Iterable<T>>): Iterable<T> {
-  for (const ys of xs) {
-    yield* ys;
+export const flatten = function* <T>(
+  iterable: Iterable<Iterable<T>>,
+): Iterable<T> {
+  for (const child of iterable) {
+    yield* child;
   }
 };

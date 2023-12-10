@@ -10,15 +10,15 @@ export const flatSlice = <T>(
     (async function* () {
       let count = 0;
 
-      for await (const xs of iterable) {
+      for await (const array of iterable) {
         if (count >= end) {
           return;
-        } else if (xs.length + count >= start) {
-          yield xs.slice(Math.max(start - count, 0), end - count);
+        } else if (array.length + count >= start) {
+          yield array.slice(Math.max(start - count, 0), end - count);
         }
 
-        count += xs.length;
+        count += array.length;
       }
     })(),
-    (xs) => xs.length,
+    (array) => array.length,
   );

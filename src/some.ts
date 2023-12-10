@@ -1,7 +1,7 @@
-export const some = <T>(xs: Iterable<T>): T | false => {
-  for (const x of xs) {
-    if (x) {
-      return x;
+export const some = <T>(iterable: Iterable<T>): T | false => {
+  for (const value of iterable) {
+    if (value) {
+      return value;
     }
   }
 
