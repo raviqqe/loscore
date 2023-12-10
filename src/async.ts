@@ -13,4 +13,5 @@ export * from "./async/to-byte-stream.js";
 export * from "./async/to-iterable.js";
 export * from "./async/to-stream.js";
 export * from "./async/to-string-stream.js";
+export * from "./async/to-string.js";
 export * from "./async/to-uint8-array.js";
