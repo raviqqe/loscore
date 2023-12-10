@@ -1,7 +1,7 @@
 import { it, expect } from "vitest";
 import { compact } from "./compact.js";
 
-for (const [xs, y] of [
+for (const [iterable, value] of [
   [[0], []],
   [[""], []],
   [[undefined], []],
@@ -12,9 +12,9 @@ for (const [xs, y] of [
     [-1, 1],
   ],
 ] satisfies [unknown[], unknown[]][]) {
-  it(`finds the last element in an array ${JSON.stringify(xs)}`, () => {
-    const zs: unknown[] = xs;
+  it(`finds the last element in an array ${JSON.stringify(iterable)}`, () => {
+    const zs: unknown[] = iterable;
 
-    expect(compact(zs)).toEqual(y);
+    expect([...compact(zs)]).toEqual(value);
   });
 }
