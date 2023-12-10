@@ -2,16 +2,19 @@ export const filter: {
   // TODO How can we not tell lie to the type system...?
   <T, S extends T>(
     iterable: AsyncIterable<T>,
-    check: (x: T) => x is S,
+    check: (value: T) => value is S,
   ): AsyncIterable<S>;
-  <T>(iterable: AsyncIterable<T>, check: (x: T) => unknown): AsyncIterable<T>;
+  <T>(
+    iterable: AsyncIterable<T>,
+    check: (value: T) => unknown,
+  ): AsyncIterable<T>;
 } = async function* <T>(
   iterable: AsyncIterable<T>,
-  check: (x: T) => unknown,
+  check: (value: T) => unknown,
 ): AsyncIterable<T> {
-  for await (const x of iterable) {
-    if (check(x)) {
-      yield x;
+  for await (const value of iterable) {
+    if (check(value)) {
+      yield value;
     }
   }
 };
