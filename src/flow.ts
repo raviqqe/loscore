@@ -1,9 +1,9 @@
 export const flow =
-  <T>(...fs: ((x: T) => T)[]): ((x: T) => T) =>
-  (x: T): T => {
-    for (const f of fs) {
-      x = f(x);
+  <T>(...array: ((value: T) => T)[]): ((value: T) => T) =>
+  (value: T): T => {
+    for (const convert of array) {
+      value = convert(value);
     }
 
-    return x;
+    return value;
   };

@@ -1,6 +1,6 @@
 export const groupBy = <T, K extends string | number | symbol>(
   iterable: Iterable<T>,
-  getKey: (x: T) => K,
+  getKey: (value: T) => K,
 ): Record<K, T[]> => {
   const ys = {} as Record<K, T[]>;
 
