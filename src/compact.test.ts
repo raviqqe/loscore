@@ -13,8 +13,8 @@ for (const [iterable, value] of [
   ],
 ] satisfies [unknown[], unknown[]][]) {
   it(`finds the last element in an array ${JSON.stringify(iterable)}`, () => {
-    const zs: unknown[] = iterable;
+    const values: unknown[] = iterable;
 
-    expect([...compact(zs)]).toEqual(value);
+    expect([...compact(values)]).toEqual(value);
   });
 }

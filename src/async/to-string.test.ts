@@ -7,11 +7,11 @@ it("accumulates arrays", async () => {
     await toString(
       toStream(
         (async function* () {
-          yield "foo";
-          yield "bar";
-          yield "baz";
+          yield "sa";
+          yield "van";
+          yield "na";
         })(),
       ),
     ),
-  ).toEqual("foobarbaz");
+  ).toEqual("savanna");
 });
