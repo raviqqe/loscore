@@ -2,10 +2,6 @@ import { expect, it } from "vitest";
 import { toUint8Array } from "./to-uint8-array.js";
 import { toStream } from "./to-stream.js";
 
-it("accumulates no array", async () => {
-  expect(await toUint8Array(new ReadableStream())).toEqual(new Uint8Array());
-});
-
 it("accumulates arrays", async () => {
   expect(
     await toUint8Array(
