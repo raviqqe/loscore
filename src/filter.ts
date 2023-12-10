@@ -4,7 +4,7 @@ export const filter: {
     iterable: Iterable<T>,
     test: (x: T) => x is S,
   ): Iterable<S>;
-  <T>(xs: Iterable<T>, f: (x: T) => unknown): Iterable<T>;
+  <T>(iterable: Iterable<T>, test: (x: T) => unknown): Iterable<T>;
 } = function* <T>(
   iterable: Iterable<T>,
   test: (value: T) => unknown,
