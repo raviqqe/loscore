@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { sum } from "./sum";
+import { sum } from "./sum.js";
 
 it("sums up no number", () => {
   expect(sum([])).toBe(0);
