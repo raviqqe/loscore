@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
-import { toUint8Array } from "./to-uint8-array.js";
 import { toStream } from "./to-stream.js";
+import { toUint8Array } from "./to-uint8-array.js";
 
 it("accumulates arrays", async () => {
   expect(

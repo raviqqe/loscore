@@ -1,5 +1,5 @@
-import { sum } from "../sum.js";
 import { map } from "../map.js";
+import { sum } from "../sum.js";
 import { toIterable } from "./to-iterable.js";
 
 export const toUint8Array = async (
