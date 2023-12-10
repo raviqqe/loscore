@@ -1,13 +1,13 @@
-export const every = <T>(xs: Iterable<T>): T | boolean => {
-  let y: T | boolean = true;
+export const every = <T>(iterable: Iterable<T>): T | boolean => {
+  let result: T | boolean = true;
 
-  for (const x of xs) {
-    if (!x) {
+  for (const value of iterable) {
+    if (!value) {
       return false;
     }
 
-    y = x;
+    result = value;
   }
 
-  return y;
+  return result;
 };
