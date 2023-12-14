@@ -2,12 +2,12 @@ export const fold = <T>(
   iterable: Iterable<T>,
   initial: T,
   accumulate: (accumulator: T, value: T) => T,
-): T | undefined => {
-  let y = undefined;
+): T => {
+  let accumulator = initial;
 
   for (const value of iterable) {
-    y += value;
+    accumulator = accumulate(accumulator, value);
   }
 
-  return y;
+  return accumulator;
 };
