@@ -2,7 +2,7 @@ import { expect, it } from "vitest";
 import { fold } from "./fold.js";
 
 for (const [values, value] of [
-  [[] as never[], 0],
+  [[], 0],
   [[1], 1],
   [[1, 2], 3],
   [[1, 2, 3], 6],

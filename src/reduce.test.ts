@@ -2,7 +2,7 @@ import { expect, it } from "vitest";
 import { reduce } from "./reduce.js";
 
 for (const [values, value] of [
-  [[] as never[], undefined],
+  [[], undefined],
   [[1], 1],
   [[1, 2], 3],
   [[1, 2, 3], 6],
