@@ -1,15 +1,11 @@
 import { map } from "../map.js";
 import { sum } from "../sum.js";
-import { toIterable } from "./to-iterable.js";
+import { toArray } from "./to-array.js";
 
-export const toUint8Array = async (
-  stream: ReadableStream<Uint8Array>,
+export const collectUint8Array = async (
+  iterable: AsyncIterable<Uint8Array>,
 ): Promise<Uint8Array> => {
-  const chunks = [];
-
-  for await (const chunk of toIterable(stream)) {
-    chunks.push(chunk);
-  }
+  const chunks = await toArray(iterable);
 
   const length = sum(map(chunks, (chunk) => chunk.length));
   const array = new Uint8Array(length);
