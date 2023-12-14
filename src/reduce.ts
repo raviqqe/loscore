@@ -6,7 +6,7 @@ export const reduce = <T>(
 
   for (const value of iterable) {
     accumulator =
-      accumulator === undefined ? foo : accumulate(accumulator, value);
+      accumulator === undefined ? value : accumulate(accumulator, value);
   }
 
   return accumulator;
