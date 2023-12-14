@@ -1,7 +1,7 @@
 import { expect, it } from "vitest";
 import { collectString } from "./collect-string.js";
 
-it("accumulates arrays", async () => {
+it("accumulates strings", async () => {
   expect(
     await collectString(
       (async function* () {
