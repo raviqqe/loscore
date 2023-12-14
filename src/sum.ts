@@ -1,9 +1,4 @@
-export const sum = (iterable: Iterable<number>): number => {
-  let sum = 0;
+import { fold } from "./fold.js";
 
-  for (const value of iterable) {
-    sum += value;
-  }
-
-  return sum;
-};
+export const sum = (iterable: Iterable<number>): number =>
+  fold(iterable, 0, (x, y) => x + y);
