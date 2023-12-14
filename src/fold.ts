@@ -1,8 +1,8 @@
-export const fold = <T>(
+export const fold = <T, S>(
   iterable: Iterable<T>,
-  initial: T,
-  accumulate: (accumulator: T, value: T) => T,
-): T => {
+  initial: S,
+  accumulate: (accumulator: S, value: T) => S,
+): S => {
   let accumulator = initial;
 
   for (const value of iterable) {

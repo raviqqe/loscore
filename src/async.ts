@@ -1,3 +1,5 @@
+export * from "./async/collect-string.js";
+export * from "./async/collect-uint8-array.js";
 export * from "./async/defer.js";
 export * from "./async/filter.js";
 export * from "./async/flat-slice.js";
@@ -16,5 +18,3 @@ export * from "./async/to-byte-stream.js";
 export * from "./async/to-iterable.js";
 export * from "./async/to-stream.js";
 export * from "./async/to-string-stream.js";
-export * from "./async/to-string.js";
-export * from "./async/to-uint8-array.js";
