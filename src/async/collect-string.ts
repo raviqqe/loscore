@@ -1,5 +1,4 @@
 import { fold } from "./fold.js";
-import { toIterable } from "./to-iterable.js";
 
 export const collectString = async (
   iterable: AsyncIterable<string>,
