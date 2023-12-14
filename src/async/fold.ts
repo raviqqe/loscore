@@ -1,8 +1,8 @@
-export const fold = async <T>(
+export const fold = async <T, S>(
   iterable: AsyncIterable<T>,
-  initial: T,
-  accumulate: (accumulator: T, value: T) => T,
-): Promise<T> => {
+  initial: S,
+  accumulate: (accumulator: S, value: T) => S,
+): Promise<S> => {
   let accumulator = initial;
 
   for await (const value of iterable) {
