@@ -1,7 +1,7 @@
 {
   "entry": ["src/main.ts", "src/async.ts"],
   "ignore": ["src/**/*.test.ts"],
-  "ignoreDependencies": ["@vitest/coverage-v8", "src"],
+  "ignoreDependencies": ["@vitest/coverage-v8"],
   "plugins": ["vitest"],
   "project": ["src/**/*.ts"]
 }
