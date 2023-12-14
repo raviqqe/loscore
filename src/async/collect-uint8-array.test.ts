@@ -1,7 +1,7 @@
 import { expect, it } from "vitest";
 import { collectUint8Array } from "./collect-uint8-array.js";
 
-it("accumulates arrays", async () => {
+it("collects arrays", async () => {
   expect(
     await collectUint8Array(
       (async function* () {
