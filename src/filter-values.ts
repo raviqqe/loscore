@@ -5,7 +5,7 @@ export const filterValues: {
   <K extends string | number | symbol, V, W extends V = V>(
     object: Record<K, V>,
     test: (value: V) => value is W,
-  ): Record<string, V>;
+  ): Record<string, W>;
   <K extends string | number | symbol, V>(
     object: Record<K, V>,
     test: (value: V) => unknown,

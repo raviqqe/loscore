@@ -9,7 +9,12 @@ it("filters values in an object", () => {
 });
 
 it("filters values in an object into a different type", () => {
-  expect(filterValues({ bar: 3, baz: 1, foo: "qux" }, isString)).toEqual({
+  expect(
+    filterValues({ bar: 3, baz: 1, foo: "qux" }, isString) satisfies Record<
+      string,
+      string
+    >,
+  ).toEqual({
     foo: "qux",
   });
 });
