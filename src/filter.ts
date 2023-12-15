@@ -1,5 +1,5 @@
+// TODO How can we not tell lie to the type system...?
 export const filter: {
-  // TODO How can we not tell lie to the type system...?
   <T, S extends T = T>(
     iterable: Iterable<T>,
     test: (value: T) => value is S,
