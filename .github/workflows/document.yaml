@@ -22,5 +22,5 @@ jobs:
       - uses: actions/upload-pages-artifact@v2
         with:
           path: doc
-      - uses: actions/deploy-pages@v3
+      - uses: actions/deploy-pages@v4
         if: github.ref == 'refs/heads/main'
