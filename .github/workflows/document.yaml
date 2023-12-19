@@ -17,12 +17,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v4
-      - uses: homebrew/actions/setup-homebrew@master
-      - run: brew install deno
       - run: npm ci
       - run: npm run build:doc
       - uses: actions/upload-pages-artifact@v2
         with:
-          path: docs
+          path: doc
       - uses: actions/deploy-pages@v3
         if: github.ref == 'refs/heads/main'
