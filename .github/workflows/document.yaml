@@ -19,7 +19,7 @@ jobs:
       - uses: actions/configure-pages@v4
       - run: npm ci
       - run: npm run build:doc
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: doc
       - uses: actions/deploy-pages@v4
