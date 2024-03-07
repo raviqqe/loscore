@@ -26,6 +26,10 @@ Before using this library, also consider using [Lodash][lodash] v5 (not official
 - Do not replicate logic implemented in [the Web APIs][web-api] already.
 - Provide tree-shakeable ES modules.
 
+## Documentation
+
+[Here](https://raviqqe.com/loscore).
+
 ## References
 
 - [lodash][lodash]
