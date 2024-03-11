@@ -5,7 +5,7 @@ on:
       - main
   pull_request:
 jobs:
-  release:
+  npm:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -19,3 +19,11 @@ jobs:
         with:
           access: public
           token: ${{ secrets.NPM_TOKEN }}
+  jsr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx jsr publish ${{ github.ref == 'refs/heads/main' && '' || '--dry-run' }}

@@ -1,3 +1,3 @@
-export const isTruthy = Boolean as unknown as <T>(
+export const isTruthy = <T>(
   value: T,
-) => value is Exclude<T, 0 | "" | false | null | undefined>;
+): value is Exclude<T, 0 | "" | false | null | undefined> => !!value;
