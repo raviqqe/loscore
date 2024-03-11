@@ -19,7 +19,7 @@ jobs:
         with:
           access: public
           token: ${{ secrets.NPM_TOKEN }}
-  deno:
+  jsr:
     runs-on: ubuntu-latest
     permissions:
       contents: read
