@@ -1,5 +1,8 @@
 {
   "name": "@raviqqe/loscore",
   "version": "0.1.2",
-  "exports": [{ ".": "./src/main.ts" }, { "./async": "./src/async.ts" }]
+  "exports": {
+    ".": "./src/main.ts",
+    "./async": "./src/async.ts"
+  }
 }
