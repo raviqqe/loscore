@@ -29,5 +29,6 @@ export * from "./some.js";
 export * from "./sort-by.js";
 export * from "./sort-key.js";
 export * from "./sum.js";
+export * from "./unique-by.js";
 export * from "./unique.js";
 export * from "./zip.js";
