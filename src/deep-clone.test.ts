@@ -12,6 +12,7 @@ for (const x of [
   {},
   { foo: null },
   { bar: null, foo: null },
+  { bar: null, foo: [1, 2, { foo: 42 }] },
 ]) {
   it("clone a value", () => {
     expect(deepClone(x)).toEqual(x);
