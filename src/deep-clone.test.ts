@@ -1,42 +1,19 @@
 import { expect, it } from "vitest";
-import { deepEqual } from "./deep-equal.js";
+import { deepClone } from "./deep-clone.js";
 
-for (const [x, y] of [
-  [undefined, undefined],
-  [null, null],
-  [false, false],
-  [true, true],
-  [42, 42],
-  [[], []],
-  [
-    [1, 2, 3],
-    [1, 2, 3],
-  ],
-  [{}, {}],
-  [{ foo: null }, { foo: null }],
-  [
-    { bar: null, foo: null },
-    { bar: null, foo: null },
-  ],
+for (const x of [
+  undefined,
+  null,
+  false,
+  true,
+  42,
+  [],
+  [1, 2, 3],
+  {},
+  { foo: null },
+  { bar: null, foo: null },
 ]) {
-  it("compares equivalent values", () => {
-    expect(deepEqual(x, y)).toBe(true);
-  });
-}
-
-for (const [x, y] of [
-  [undefined, null],
-  [false, 0],
-  [[], [1]],
-  [[1], []],
-  [
-    [1, 2],
-    [1, 2, 3],
-  ],
-  [{ foo: null }, {}],
-  [{ foo: null }, { bar: null, foo: null }],
-]) {
-  it("compares different values", () => {
-    expect(deepEqual(x, y)).toBe(false);
+  it("clone a value", () => {
+    expect(deepClone(x)).toEqual(x);
   });
 }
