@@ -1,5 +1,6 @@
 export * from "./capitalize.js";
 export * from "./compact.js";
+export * from "./deep-clone.js";
 export * from "./deep-equal.js";
 export * from "./every.js";
 export * from "./filter-values.js";
