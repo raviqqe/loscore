@@ -1,1 +1,1 @@
-export type GeneralIterable<T> = Iterable<T> | AsyncIterable<T>;
+export type GeneralIterable<T> = AsyncIterable<T> | Iterable<T>;

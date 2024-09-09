@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { once } from "./once.js";
 
 it("calls a function twice", () => {

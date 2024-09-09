@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { filterValues } from "./filter-values.js";
 import { isString } from "./is-string.js";
 

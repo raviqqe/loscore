@@ -1,5 +1,5 @@
-export const every = <T>(iterable: Iterable<T>): T | boolean => {
-  let result: T | boolean = true;
+export const every = <T>(iterable: Iterable<T>): boolean | T => {
+  let result: boolean | T = true;
 
   for (const value of iterable) {
     if (!value) {

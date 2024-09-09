@@ -1,7 +1,7 @@
 export const interleave = function* <T, S>(
   array: T[],
-  separator: S | ((index: number) => S),
-): Iterable<T | S> {
+  separator: ((index: number) => S) | S,
+): Iterable<S | T> {
   for (const [index, value] of array.entries()) {
     yield value;
 

@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { last } from "./last.js";
 
 for (const [array, value] of [

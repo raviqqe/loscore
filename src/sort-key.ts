@@ -1,1 +1,1 @@
-export type SortKey = string | number | boolean | Date | SortKey[];
+export type SortKey = boolean | Date | number | SortKey[] | string;
