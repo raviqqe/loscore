@@ -1,4 +1,4 @@
-export const groupBy = <T, K extends string | number | symbol>(
+export const groupBy = <T, K extends number | string | symbol>(
   iterable: Iterable<T>,
   getKey: (value: T) => K,
 ): Record<K, T[]> => {

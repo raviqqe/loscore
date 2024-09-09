@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { compact } from "./compact.js";
 
 for (const [iterable, value] of [

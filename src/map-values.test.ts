@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { mapValues } from "./map-values.js";
 
 it("maps values in an object", () => {
