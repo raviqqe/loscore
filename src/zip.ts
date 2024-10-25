@@ -9,7 +9,6 @@ export const zip = function* <T, S>(
     const result1 = iterator1.next();
     const result2 = iterator2.next();
 
-    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
     if (result1.done || result2.done) {
       break;
     }
