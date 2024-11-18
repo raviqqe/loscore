@@ -10,4 +10,10 @@ export default defineConfig({
       },
     },
   ],
+  source: {
+    entry: {
+      async: "src/async.ts",
+      index: "src/index.ts",
+    },
+  },
 });
