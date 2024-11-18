@@ -2,7 +2,7 @@
   "name": "@raviqqe/loscore",
   "version": "0.2.6",
   "exports": {
-    ".": "./src/main.ts",
+    ".": "./src/index.ts",
     "./async": "./src/async.ts"
   }
 }

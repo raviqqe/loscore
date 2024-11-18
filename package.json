@@ -10,8 +10,8 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/main.d.ts",
-      "default": "./dist/main.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./async": {
       "types": "./dist/async.d.ts",
@@ -19,10 +19,8 @@
     }
   },
   "scripts": {
-    "build": "npm run build:tsc && npm run build:esbuild",
-    "build:tsc": "tsc --emitDeclarationOnly",
-    "build:esbuild": "esbuild --minify --format=esm --sourcemap --outdir=dist $(git ls-files src)",
-    "build:doc": "deno doc --unstable-sloppy-imports --html --name='🕹 Loscore' src/main.ts src/async.ts",
+    "build": "rslib build",
+    "build:doc": "deno doc --unstable-sloppy-imports --html --name='🕹 Loscore' src/index.ts src/async.ts",
     "prepare": "npm run build",
     "lint": "eslint src && npm run lint:knip",
     "lint:knip": "knip",
@@ -31,12 +29,13 @@
   "devDependencies": {
     "@raviqqe/eslint-config": "^4.0.2",
     "@raviqqe/tsconfig": "^1.0.1",
+    "@rslib/core": "^0.0.18",
     "@types/node": "^22.0.0",
     "@vitest/coverage-v8": "^2.0.1",
-    "esbuild": "^0.24.0",
     "eslint": "^9.10.0",
     "jsr": "^0.13.0",
     "knip": "^5.0.1",
+    "rslib": "^0.0.10",
     "typescript": "^5.0.2",
     "vitest": "^2.0.1"
   }
