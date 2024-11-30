@@ -5,7 +5,7 @@ export * from "./async/filter.js";
 export * from "./async/flat-slice.js";
 export * from "./async/flatten.js";
 export * from "./async/fold.js";
-export * from "./async/general-iterable.js";
+export type * from "./async/general-iterable.js";
 export * from "./async/is-async-iterable.js";
 export * from "./async/map-stream.js";
 export * from "./async/map.js";
