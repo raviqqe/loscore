@@ -2,6 +2,5 @@
   "entry": ["src/index.ts", "src/async.ts"],
   "ignore": ["src/**/*.test.ts"],
   "ignoreDependencies": ["@vitest/coverage-v8", "rslib"],
-  "plugins": ["vitest"],
   "project": ["src/**/*.ts"]
 }
