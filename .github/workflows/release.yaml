@@ -12,7 +12,7 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v5
-      - run: ./.github/actions/setup
+      - uses: ./.github/actions/setup
       - uses: raviqqe/pnpm-publish@v1
         with:
           npm_token: ${{ github.ref == 'refs/heads/main' && secrets.NPM_TOKEN || '' }}
