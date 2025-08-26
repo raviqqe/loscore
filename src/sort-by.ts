@@ -1,4 +1,4 @@
-import { type SortKey } from "./sort-key.js";
+import type { SortKey } from "./sort-key.js";
 
 export const sortBy = <T>(array: T[], test: (value: T) => SortKey): T[] => {
   const keys = new Map<T, ReturnType<typeof test>>();
