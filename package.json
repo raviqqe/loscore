@@ -24,17 +24,16 @@
   "scripts": {
     "build": "rslib build",
     "build:doc": "deno doc --unstable-sloppy-imports --html --name='🕹 Loscore' src/index.ts src/async.ts",
-    "lint": "eslint src && npm run lint:knip",
-    "lint:knip": "knip",
+    "lint": "biome ci && knip",
     "test": "vitest --coverage"
   },
   "devDependencies": {
-    "@raviqqe/eslint-config": "^5.0.0",
+    "@biomejs/biome": "^2.2.2",
+    "@raviqqe/biome-config": "^2.0.16",
     "@raviqqe/tsconfig": "^2.0.1",
     "@rslib/core": "^0.12.2",
     "@types/node": "^24.3.0",
     "@vitest/coverage-v8": "^3.2.4",
-    "eslint": "^9.34.0",
     "jsr": "^0.13.5",
     "knip": "^5.63.0",
     "typescript": "^5.9.2",
