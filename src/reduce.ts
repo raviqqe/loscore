@@ -2,7 +2,7 @@ export const reduce = <T>(
   iterable: Iterable<T>,
   accumulate: (accumulator: T, value: T) => T,
 ): T | undefined => {
-  let accumulator;
+  let accumulator: T | undefined;
 
   for (const value of iterable) {
     accumulator =
