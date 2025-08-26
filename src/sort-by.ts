@@ -7,6 +7,7 @@ export const sortBy = <T>(array: T[], test: (value: T) => SortKey): T[] => {
       keys.set(value, test(value));
     }
 
+    // biome-ignore lint/style/noNonNullAssertion: Key already checked
     return keys.get(value)!;
   };
 
