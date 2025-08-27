@@ -5,7 +5,6 @@ export const groupBy = <T, K extends number | string | symbol>(
   const ys = {} as Record<K, T[]>;
 
   for (const x of iterable) {
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     (ys[getKey(x)] ??= []).push(x);
   }
 
