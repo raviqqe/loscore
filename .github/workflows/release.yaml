@@ -10,12 +10,13 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    environment: ${{ github.ref == 'refs/heads/main' && 'release' || '' }}
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
-      - uses: raviqqe/pnpm-publish@v1
+      - uses: raviqqe/pnpm-publish@v2
         with:
-          npm_token: ${{ github.ref == 'refs/heads/main' && secrets.NPM_TOKEN || '' }}
+          release: ${{ github.ref == 'refs/heads/main' }}
   jsr:
     runs-on: ubuntu-latest
     permissions:
