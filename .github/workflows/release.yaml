@@ -5,7 +5,7 @@ on:
       - main
   pull_request:
 jobs:
-  npm:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -17,11 +17,3 @@ jobs:
       - uses: raviqqe/pnpm-publish@v2
         with:
           release: ${{ github.ref == 'refs/heads/main' }}
-  jsr:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
-    steps:
-      - uses: actions/checkout@v5
-      - run: npx jsr publish ${{ github.ref == 'refs/heads/main' && '--' || '--dry-run' }}
