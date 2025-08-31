@@ -5,7 +5,7 @@ on:
       - main
   pull_request:
 jobs:
-  test:
+  unit_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -26,3 +26,12 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: raviqqe/markdown-link-check@main
+  test:
+    needs:
+      - unit_test
+      - spell_check
+      - readme
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - run: for result in ${{ join(needs.*.result, ' ') }}; do [ $result = success ]; done
