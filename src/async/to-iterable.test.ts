@@ -1,10 +1,10 @@
 import { expect, it } from "vitest";
-import { toArray } from "./to-array.js";
+
 import { toIterable } from "./to-iterable.js";
 
 it("converts a stream into iterable", async () => {
   expect(
-    await toArray(
+    await Array.fromAsync(
       toIterable(
         new ReadableStream({
           start: (controller) => {
