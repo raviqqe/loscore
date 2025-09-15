@@ -12,5 +12,4 @@ export * from "./async/reduce.js";
 export * from "./async/sleep.js";
 export * from "./async/slice.js";
 export * from "./async/sum.js";
-export * from "./async/to-iterable.js";
 export * from "./async/to-stream.js";
