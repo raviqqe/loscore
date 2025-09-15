@@ -6,7 +6,7 @@ it("converts iterable into a stream", async () => {
   expect(
     await Array.fromAsync(
       toStream(
-        (async function*() {
+        (async function* () {
           yield 1;
           yield 2;
           yield 3;
