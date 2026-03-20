@@ -34,7 +34,7 @@
     "@rslib/core": "^0.20.0",
     "@types/node": "^25.0.0",
     "@vitest/coverage-v8": "^4.0.1",
-    "knip": "^5.63.0",
+    "knip": "^6.0.1",
     "typescript": "^5.9.2",
     "vitest": "^4.0.1"
   },
