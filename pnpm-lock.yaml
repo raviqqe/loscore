@@ -15,8 +15,8 @@ importers:
         specifier: ^2.0.16
         version: 2.0.24(@biomejs/biome@2.4.8)
       '@raviqqe/tsconfig':
-        specifier: ^2.0.1
-        version: 2.0.3
+        specifier: ^3.0.0
+        version: 3.0.0
       '@rslib/core':
         specifier: ^0.20.0
         version: 0.20.0(core-js@3.47.0)(typescript@5.9.3)
@@ -591,9 +591,9 @@ packages:
     peerDependencies:
       '@biomejs/biome': ^2.1.4
 
-  '@raviqqe/tsconfig@2.0.3':
-    resolution: {integrity: sha512-9eTFd1ye3CcD0vfoPVkLzBr+cOTx/Vk5+feJb9KM4rWxEx3zGtXvAr2v3Er2DOdP8w0c2KhwKXFB/By2NffIHA==}
-    engines: {node: '>=24.6.0'}
+  '@raviqqe/tsconfig@3.0.0':
+    resolution: {integrity: sha512-axoa5/vjOV/BoPQCyOpfdQr+/vjT9HKo9fxhUB2yvh6I9oRKntcHlht5kTbTndQVBgyreHfaa1STKoFqziZ+dg==}
+    engines: {node: '>=25.8.0'}
 
   '@rollup/rollup-android-arm-eabi@4.60.0':
     resolution: {integrity: sha512-WOhNW9K8bR3kf4zLxbfg6Pxu2ybOUbB2AjMDHSQx86LIF4rH4Ft7vmMwNt0loO0eonglSNy4cpD3MKXXKQu0/A==}
@@ -1130,6 +1130,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@6.0.2:
+    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   unbash@2.2.0:
     resolution: {integrity: sha512-X2wH19RAPZE3+ldGicOkoj/SIA83OIxcJ6Cuaw23hf8Xc6fQpvZXY0SftE2JgS0QhYLUG4uwodSI3R53keyh7w==}
     engines: {node: '>=14'}
@@ -1579,9 +1584,9 @@ snapshots:
     dependencies:
       '@biomejs/biome': 2.4.8
 
-  '@raviqqe/tsconfig@2.0.3':
+  '@raviqqe/tsconfig@3.0.0':
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   '@rollup/rollup-android-arm-eabi@4.60.0':
     optional: true
@@ -2123,6 +2128,8 @@ snapshots:
   tslib@2.8.1: {}
 
   typescript@5.9.3: {}
+
+  typescript@6.0.2: {}
 
   unbash@2.2.0: {}
 
