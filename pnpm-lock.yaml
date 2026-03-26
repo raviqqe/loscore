@@ -28,7 +28,7 @@ importers:
         version: 4.1.2(vitest@4.1.2(@types/node@25.5.0)(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(yaml@2.8.3)))
       knip:
         specifier: ^6.0.1
-        version: 6.0.5
+        version: 6.0.6
       typescript:
         specifier: ^5.9.2
         version: 5.9.3
@@ -977,8 +977,8 @@ packages:
   js-tokens@10.0.0:
     resolution: {integrity: sha512-lM/UBzQmfJRo9ABXbPWemivdCW8V2G8FHaHdypQaIy523snUjog0W71ayWXTjiR+ixeMyVHN2XcpnTd/liPg/Q==}
 
-  knip@6.0.5:
-    resolution: {integrity: sha512-+i9e/ZKuYlECB5iIK82NQwnYso4oNLBhzsTbXhSqCG1qfGi6D84GNtRENafmS3C0lABX8Wf3BKM434nPXi2AbQ==}
+  knip@6.0.6:
+    resolution: {integrity: sha512-PA+r1mTDLHH3eShlffn2ZDyH1hHvmgDj7JsTP3JKuhV/jZTyHbRkGcOd+uaSxfJZmcZyOE5zw3naP33WllTIlA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -1927,7 +1927,7 @@ snapshots:
 
   js-tokens@10.0.0: {}
 
-  knip@6.0.5:
+  knip@6.0.6:
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       fast-glob: 3.3.3
