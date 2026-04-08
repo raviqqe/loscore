@@ -31,7 +31,7 @@
     "@biomejs/biome": "^2.2.2",
     "@raviqqe/biome-config": "^2.0.16",
     "@raviqqe/tsconfig": "^3.0.0",
-    "@rslib/core": "^0.20.0",
+    "@rslib/core": "^0.21.0",
     "@types/node": "^25.0.0",
     "@vitest/coverage-v8": "^4.0.1",
     "knip": "^6.0.1",
