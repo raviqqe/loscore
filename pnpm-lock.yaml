@@ -28,13 +28,13 @@ importers:
         version: 4.1.5(vitest@4.1.5)
       knip:
         specifier: ^6.0.1
-        version: 6.10.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
+        version: 6.11.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
       typescript:
         specifier: ^6.0.2
         version: 6.0.3
       vitest:
         specifier: ^4.0.1
-        version: 4.1.5(@types/node@25.6.0)(@vitest/coverage-v8@4.1.5)(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3))
+        version: 4.1.5(@types/node@25.6.0)(@vitest/coverage-v8@4.1.5)(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4))
 
 packages:
 
@@ -801,8 +801,8 @@ packages:
   '@swc/helpers@0.5.21':
     resolution: {integrity: sha512-jI/VAmtdjB/RnI8GTnokyX7Ug8c+g+ffD6QRLa6XQewtnGyukKkKSk3wLTM3b5cjt1jNh9x0jfVlagdN2gDKQg==}
 
-  '@tybys/wasm-util@0.10.1':
-    resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
+  '@tybys/wasm-util@0.10.2':
+    resolution: {integrity: sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -937,8 +937,8 @@ packages:
   js-tokens@10.0.0:
     resolution: {integrity: sha512-lM/UBzQmfJRo9ABXbPWemivdCW8V2G8FHaHdypQaIy523snUjog0W71ayWXTjiR+ixeMyVHN2XcpnTd/liPg/Q==}
 
-  knip@6.10.0:
-    resolution: {integrity: sha512-u9EaTj17MYkTw2aojWSwMoRQ6pI/ZtjDexuhqkQ8uQuvMFJXeeHu6MhKDdSppijGaiNGtDSMFYs+w5iZLrb2Cg==}
+  knip@6.11.0:
+    resolution: {integrity: sha512-84PTlN8Q5smLpTbzs8smTVh8PMbTDXtw0tFksXq/m6auGFC/KSzJykKFmnYh3As38kiWDkoDBvdTTyKk5M1TAQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -1158,13 +1158,13 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  yaml@2.8.3:
-    resolution: {integrity: sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==}
+  yaml@2.8.4:
+    resolution: {integrity: sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
-  zod@4.4.2:
-    resolution: {integrity: sha512-IynmDyxsEsb9RKzO3J9+4SxXnl2FTFSzNBaKKaMV6tsSk0rw9gYw9gs+JFCq/qk2LCZ78KDwyj+Z289TijSkUw==}
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
@@ -1364,7 +1364,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.10.0
       '@emnapi/runtime': 1.10.0
-      '@tybys/wasm-util': 0.10.1
+      '@tybys/wasm-util': 0.10.2
     optional: true
 
   '@oxc-parser/binding-android-arm-eabi@0.128.0':
@@ -1660,7 +1660,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@tybys/wasm-util@0.10.1':
+  '@tybys/wasm-util@0.10.2':
     dependencies:
       tslib: 2.8.1
     optional: true
@@ -1690,7 +1690,7 @@ snapshots:
       obug: 2.1.1
       std-env: 4.1.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.5(@types/node@25.6.0)(@vitest/coverage-v8@4.1.5)(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3))
+      vitest: 4.1.5(@types/node@25.6.0)(@vitest/coverage-v8@4.1.5)(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4))
 
   '@vitest/expect@4.1.5':
     dependencies:
@@ -1701,13 +1701,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.5(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3))':
+  '@vitest/mocker@4.1.5(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4))':
     dependencies:
       '@vitest/spy': 4.1.5
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3)
+      vite: 7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4)
 
   '@vitest/pretty-format@4.1.5':
     dependencies:
@@ -1825,7 +1825,7 @@ snapshots:
 
   js-tokens@10.0.0: {}
 
-  knip@6.10.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0):
+  knip@6.11.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0):
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
       formatly: 0.3.0
@@ -1839,8 +1839,8 @@ snapshots:
       strip-json-comments: 5.0.3
       tinyglobby: 0.2.16
       unbash: 3.0.0
-      yaml: 2.8.3
-      zod: 4.4.2
+      yaml: 2.8.4
+      zod: 4.4.3
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -2005,7 +2005,7 @@ snapshots:
 
   undici-types@7.19.2: {}
 
-  vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3):
+  vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -2017,12 +2017,12 @@ snapshots:
       '@types/node': 25.6.0
       fsevents: 2.3.3
       jiti: 2.6.1
-      yaml: 2.8.3
+      yaml: 2.8.4
 
-  vitest@4.1.5(@types/node@25.6.0)(@vitest/coverage-v8@4.1.5)(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3)):
+  vitest@4.1.5(@types/node@25.6.0)(@vitest/coverage-v8@4.1.5)(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4)):
     dependencies:
       '@vitest/expect': 4.1.5
-      '@vitest/mocker': 4.1.5(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3))
+      '@vitest/mocker': 4.1.5(vite@7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4))
       '@vitest/pretty-format': 4.1.5
       '@vitest/runner': 4.1.5
       '@vitest/snapshot': 4.1.5
@@ -2039,7 +2039,7 @@ snapshots:
       tinyexec: 1.1.1
       tinyglobby: 0.2.16
       tinyrainbow: 3.1.0
-      vite: 7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3)
+      vite: 7.3.1(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.4)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.6.0
@@ -2054,6 +2054,6 @@ snapshots:
       siginfo: 2.0.0
       stackback: 0.0.2
 
-  yaml@2.8.3: {}
+  yaml@2.8.4: {}
 
-  zod@4.4.2: {}
+  zod@4.4.3: {}
