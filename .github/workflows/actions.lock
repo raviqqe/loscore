@@ -19,7 +19,7 @@ workflows:
         - 'raviqqe/pnpm-publish@v1.1.1'
     '.github/workflows/security.yaml':
         - 'actions/checkout@v7.0.1'
-        - 'github/codeql-action@v4.39.4'
+        - 'github/codeql-action@v4.39.5'
     '.github/workflows/test.yaml':
         - 'actions/checkout@v7.0.1'
         - 'actions/setup-node@v6.3.0'
@@ -77,9 +77,9 @@ dependencies:
         commit: 'sha1-22d081ff2d3a40755e97629de92e3bcbfa7cf2ed'
         owner_id: 42048915
         repo_id: 356423100
-    'github/codeql-action@v4.39.4':
-        ref: 'v4.39.4'
-        commit: 'sha1-1bd86f2fdb4b86187fa4059f16f31a3202acc9ea'
+    'github/codeql-action@v4.39.5':
+        ref: 'v4.39.5'
+        commit: 'sha1-915412ff23e8b7659517e607487dbeae018f2934'
         owner_id: 9919
         repo_id: 259445878
     'lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411':
